@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import "./style.css";
-import "./style.css"
+import "./style2.css";
+// import "./style.css"
 import axios from "axios";
 
 const Index = () => {
