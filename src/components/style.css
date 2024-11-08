@@ -1,0 +1,86 @@
+.searchContainer{
+    height: 10vh;
+    display: grid;
+    place-items: center;
+}   
+
+.image-search-app{
+    min-height: 100vh;
+    color: white !important;
+}
+
+.image-search-app__results{
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.image-search-app__result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.image-search-app__result img{
+    height: 100%;
+    width: 190px;
+    object-fit: cover;
+    max-height: 200px;
+    border: 1px inset white;
+    border-radius: 5px;
+}
+
+.image-search-app__link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    height: 20px;
+    overflow: hidden;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.image-search-app__result img:hover + .image-search-app__link{
+    height: 100%;
+    transition: all 1s ease;
+}
+
+/* .image-search-app_results:hover .image-search-app_result img:not(:hover) {
+    filter: blur(5px);
+}
+
+.image-search-app__result img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+} */
+ 
+
+.image-search-app__input, button{
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid black;
+    margin: 5px;
+    
+}
+
+.image-search-app__input{
+    border-radius: 10px;
+}
+
+button{
+    border-radius:10px;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    /* transform: scale(1.2); */
+}
+
+button:active{
+    box-shadow: 0px 0px 5px 5px rgb(0, 255, 255) !important;
+    transform: scale(0.8);
+
+}
+
+button:hover{
+    box-shadow: 0px 0px 5px 2px white;
+}
